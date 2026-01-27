@@ -1,5 +1,6 @@
 import { ArrowUpRight } from "lucide-react";
 import styles from "./Hero.module.css";
+import Button from "../../ui/button/Button";
 
 export default function Hero() {
   return (
@@ -13,9 +14,7 @@ export default function Hero() {
               <span className={styles.headingLab}>LAB</span>
             </h1>
 
-            <button className={styles.button}>
-              Prenota una Consulenza <ArrowUpRight />
-            </button>
+            <Button showIcon={true}>Prenota una Consulenza</Button>
           </div>
 
           <div>

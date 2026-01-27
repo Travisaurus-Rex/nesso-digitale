@@ -1,0 +1,27 @@
+.button {
+  padding: 12px 24px;
+  border: 2px solid var(--color-primary);
+  color: black;
+  border-radius: 9999px;
+  background: transparent;
+  font-size: 16px;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.icon {
+  color: var(--color-primary);
+}
+
+.button:hover {
+  background: var(--color-primary);
+  color: white;
+}
+
+.button:hover .icon {
+  color: white;
+}
