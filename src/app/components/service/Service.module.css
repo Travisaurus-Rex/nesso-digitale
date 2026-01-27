@@ -1,0 +1,52 @@
+.service {
+  padding-top: 140px;
+  padding-bottom: 140px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.sectionHeader {
+  padding-bottom: 79px;
+}
+
+.card {
+  padding: 32px;
+  background: white;
+  text-align: left;
+  cursor: pointer;
+}
+
+.card:first-child {
+  border: 2px solid var(--color-primary);
+  border-radius: 24px;
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 16px;
+}
+
+.cardTitle {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.cardText {
+  font-size: 20px;
+  line-height: 1.6;
+  color: #666;
+}
+
+.icon {
+  width: 32px;
+  height: 32px;
+  color: var(--color-primary);
+  flex-shrink: 0;
+}

@@ -1,0 +1,20 @@
+.sectionTitle {
+  font-family: var(--font-jakarta);
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: 0;
+  margin-bottom: 60px;
+  position: relative;
+  display: inline-block;
+}
+
+.sectionTitle::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: -6px;
+  width: 169px; /* or whatever % matches the Figma */
+  height: 8px;
+  background: var(--color-primary);
+}

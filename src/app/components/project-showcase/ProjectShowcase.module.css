@@ -1,0 +1,77 @@
+.showcase {
+  background-color: var(--color-gray);
+  padding: 42px 0;
+}
+
+.showcaseFlex {
+  display: flex;
+  gap: 60px;
+  align-items: center;
+  margin-top: 64px;
+}
+
+.leftContent {
+  flex: 1;
+}
+
+.rightImage {
+  width: 386px;
+  flex-shrink: 0;
+}
+
+.projectContent {
+  display: flex;
+  flex-direction: column;
+  max-width: 449px;
+}
+
+.projectTitle {
+  font-family: var(--font-jakarta);
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 100%;
+  margin-bottom: 20px;
+}
+
+.projectDescription {
+  font-family: var(--font-jakarta);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 100%;
+  margin-bottom: 64px;
+}
+
+.projectFooter {
+  display: flex;
+  align-items: center;
+}
+
+.projectLabel {
+  font-family: var(--font-poppins);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 132%;
+  margin-right: 46px;
+}
+
+.navButtons {
+  display: flex;
+  gap: 8px;
+}
+
+.navButton {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.navButtonBlue {
+  background-color: var(--color-primary);
+  color: white;
+}
