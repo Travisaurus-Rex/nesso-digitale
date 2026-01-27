@@ -1,6 +1,4 @@
-// Component
-import Image from "next/image";
-import SectionHeader from "../section-header/SectionHeader";
+import SectionHeader from "../../ui/section-header/SectionHeader";
 import styles from "./ProjectShowcase.module.css";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 

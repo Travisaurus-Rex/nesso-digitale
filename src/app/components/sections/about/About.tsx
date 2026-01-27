@@ -1,5 +1,5 @@
+import SectionTitle from "../../ui/section-title/SectionTitle";
 import styles from "./About.module.css";
-import SectionTitle from "../section-title/SectionTitle";
 
 export default function About() {
   return (
