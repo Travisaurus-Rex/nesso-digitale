@@ -5,6 +5,7 @@ import Service from "./components/sections/service/Service";
 import ProjectShowcase from "./components/sections/project-showcase/ProjectShowcase";
 import Features from "./components/sections/features/Features";
 import Transformation from "./components/sections/transformation/Transformation";
+import CTA from "./components/sections/cta/CTA";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <ProjectShowcase />
       <Features />
       <Transformation />
+      <CTA />
     </>
   );
 }
