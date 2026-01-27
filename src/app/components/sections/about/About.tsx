@@ -1,5 +1,6 @@
 import SectionTitle from "../../ui/section-title/SectionTitle";
 import styles from "./About.module.css";
+import AboutCard from "./AboutCard";
 
 export default function About() {
   return (
@@ -13,31 +14,23 @@ export default function About() {
           </div>
 
           <div className={styles.textColumn}>
-            <div className={styles.block}>
-              <h3 className={styles.subtitle}>Due servizi, un solo partner</h3>
-              <p className={styles.text}>
-                Sviluppiamo software su misura e forniamo sviluppatori e DevOps
-                on-demand per rafforzare il tuo team.
-              </p>
-            </div>
+            <AboutCard
+              subtitle="Due servizi, un solo partner"
+              text="Sviluppiamo software su misura e forniamo sviluppatori e DevOps
+                on-demand per rafforzare il tuo team."
+            />
 
-            <div className={styles.block}>
-              <h3 className={styles.subtitle}>
-                Qualità da software house, flessibilità globale
-              </h3>
-              <p className={styles.text}>
-                Un approccio ibrido che unisce standard da software house e una
-                rete internazionale di talenti.
-              </p>
-            </div>
+            <AboutCard
+              subtitle="Qualità da software house, flessibilità globale"
+              text="Un approccio ibrido che unisce standard da software house e una
+              rete internazionale di talenti."
+            />
 
-            <div className={styles.block}>
-              <h3 className={styles.subtitle}>Focus totale sul tuo business</h3>
-              <p className={styles.text}>
-                Un referente locale e un team globale lavorano insieme per
-                trasformare le esigenze in soluzioni.
-              </p>
-            </div>
+            <AboutCard
+              subtitle="Focus totale sul tuo business"
+              text="Un referente locale e un team globale lavorano insieme per
+              trasformare le esigenze in soluzioni."
+            />
           </div>
         </div>
       </div>
