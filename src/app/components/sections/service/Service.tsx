@@ -1,6 +1,6 @@
 import { ArrowUpRight } from "lucide-react";
 import styles from "./Service.module.css";
-import SectionHeader from "../section-header/SectionHeader";
+import SectionHeader from "../../ui/section-header/SectionHeader";
 
 export default function Service() {
   return (
