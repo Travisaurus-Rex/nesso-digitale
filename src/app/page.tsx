@@ -6,6 +6,7 @@ import ProjectShowcase from "./components/sections/project-showcase/ProjectShowc
 import Features from "./components/sections/features/Features";
 import Transformation from "./components/sections/transformation/Transformation";
 import CTA from "./components/sections/cta/CTA";
+import Footer from "./components/ui/footer/Footer";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <Features />
       <Transformation />
       <CTA />
+      <Footer />
     </>
   );
 }
