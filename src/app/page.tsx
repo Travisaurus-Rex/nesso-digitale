@@ -4,6 +4,7 @@ import About from "./components/sections/about/About";
 import Service from "./components/sections/service/Service";
 import ProjectShowcase from "./components/sections/project-showcase/ProjectShowcase";
 import Features from "./components/sections/features/Features";
+import Transformation from "./components/sections/transformation/Transformation";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <Service />
       <ProjectShowcase />
       <Features />
+      <Transformation />
     </>
   );
 }

@@ -1,0 +1,22 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.description {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #666;
+}
