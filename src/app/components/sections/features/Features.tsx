@@ -1,4 +1,5 @@
-import SectionHeader from "../section-header/SectionHeader";
+import SectionHeader from "../../ui/section-header/SectionHeader";
+import FeatureItem from "./FeatureItem";
 import styles from "./Features.module.css";
 
 export default function Features() {
@@ -11,25 +12,15 @@ export default function Features() {
         />
         <div className={styles.grid}>
           <div className={styles.leftColumn}>
-            <div className={styles.feature}>
-              <h3 className={styles.featureTitle}>
-                Integrazione sito web e CRM
-              </h3>
-              <p className={styles.featureText}>
-                Sincronizzazione automatica dei lead e tempi di risposta ridotti
-                da ore a pochi minuti.
-              </p>
-            </div>
+            <FeatureItem
+              title="Integrazione sito web e CRM"
+              text="Sincronizzazione automatica dei lead e tempi di risposta ridotti da ore a pochi minuti."
+            />
 
-            <div className={styles.feature}>
-              <h3 className={styles.featureTitle}>
-                Automazione dei report di vendita mensili
-              </h3>
-              <p className={styles.featureText}>
-                Tempo di reporting ridotto del 70%, con un risparmio di circa 40
-                ore uomo al mese.
-              </p>
-            </div>
+            <FeatureItem
+              title="Automazione dei report di vendita mensili"
+              text="Tempo di reporting ridotto del 70%, con un risparmio di circa 40 ore uomo al mese."
+            />
           </div>
 
           <div className={styles.centerColumn}>
@@ -41,15 +32,10 @@ export default function Features() {
           </div>
 
           <div className={styles.rightColumn}>
-            <div className={styles.feature}>
-              <h3 className={styles.featureTitle}>
-                Gestionale leggero su misura
-              </h3>
-              <p className={styles.featureText}>
-                Processi centralizzati e attività amministrative quotidiane
-                ridotte del 50%.
-              </p>
-            </div>
+            <FeatureItem
+              title="Gestionale leggero su misura"
+              text="Processi centralizzati e attività amministrative quotidiane ridotte del 50%."
+            />
           </div>
         </div>
       </div>

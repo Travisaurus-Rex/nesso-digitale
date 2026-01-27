@@ -27,23 +27,6 @@
   height: auto;
 }
 
-.feature {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-
-.featureTitle {
-  font-size: 24px;
-  font-weight: 700;
-}
-
-.featureText {
-  font-size: 16px;
-  line-height: 1.6;
-  color: #666;
-}
-
 @media (max-width: 1024px) {
   .grid {
     flex-direction: column;
@@ -68,13 +51,5 @@
   .leftColumn,
   .rightColumn {
     gap: 40px;
-  }
-
-  .featureTitle {
-    font-size: 20px;
-  }
-
-  .featureText {
-    font-size: 14px;
   }
 }
