@@ -48,3 +48,60 @@
   background: var(--color-primary);
   color: white;
 }
+
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.mobileMenu {
+  position: fixed;
+  inset: 0;
+  background: white;
+  z-index: 999;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+}
+
+.close {
+  align-self: flex-end;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.mobileNav {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  font-size: 24px;
+}
+
+.mobileNav a {
+  text-decoration: none;
+  color: #111;
+  font-weight: 600;
+}
+
+.mobileCTA {
+  color: var(--color-primary);
+}
+
+@media (max-width: 900px) {
+  .nav {
+    display: none;
+  }
+
+  .button {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+    align-items: center;
+  }
+}
