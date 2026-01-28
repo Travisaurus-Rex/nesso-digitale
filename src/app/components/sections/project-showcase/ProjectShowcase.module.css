@@ -5,8 +5,8 @@
 
 .showcaseFlex {
   display: flex;
-  gap: 60px;
   align-items: center;
+  gap: 60px;
   margin-top: 64px;
 }
 
@@ -15,8 +15,19 @@
 }
 
 .rightImage {
+  position: relative;
   width: 386px;
+  height: 475px;
   flex-shrink: 0;
+}
+
+.rightImage img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 .projectContent {
@@ -74,4 +85,31 @@
 .navButtonBlue {
   background-color: var(--color-primary);
   color: white;
+}
+
+@media (max-width: 1024px) {
+  .showcaseFlex {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .rightImage {
+    width: 320px;
+    height: 400px;
+  }
+}
+
+@media (max-width: 768px) {
+  .showcase {
+    padding: 60px 0;
+  }
+
+  .showcaseFlex {
+    margin-top: 48px;
+  }
+
+  .rightImage {
+    width: 280px;
+    height: 350px;
+  }
 }
