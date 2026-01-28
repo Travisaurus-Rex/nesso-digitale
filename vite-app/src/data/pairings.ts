@@ -10,7 +10,7 @@ export const pairings: Pairing[] = [
     food: "Bistecca alla Fiorentina",
     foodType: FoodType.Meat,
     rating: 4.8,
-    image: "https://via.placeholder.com/200",
+    image: "/red.jpg",
     description: "Classic Tuscan red with grilled steak.",
   },
   {
@@ -21,7 +21,7 @@ export const pairings: Pairing[] = [
     food: "Roasted Lamb",
     foodType: FoodType.Meat,
     rating: 4.9,
-    image: "https://via.placeholder.com/200",
+    image: "/red.jpg",
     description: "Rich Tuscan red pairs perfectly with lamb.",
   },
   {
@@ -32,7 +32,7 @@ export const pairings: Pairing[] = [
     food: "Seafood Pasta",
     foodType: FoodType.Seafood,
     rating: 4.6,
-    image: "https://via.placeholder.com/200",
+    image: "/white.jpg",
     description: "Crisp white from Tuscany complements seafood pasta.",
   },
   {
@@ -43,7 +43,7 @@ export const pairings: Pairing[] = [
     food: "Braised Beef",
     foodType: FoodType.Meat,
     rating: 4.9,
-    image: "https://via.placeholder.com/200",
+    image: "/red.jpg",
     description: "Rich Piedmont wine perfect with slow-cooked beef.",
   },
   {
@@ -54,7 +54,7 @@ export const pairings: Pairing[] = [
     food: "Mushroom Risotto",
     foodType: FoodType.Meat,
     rating: 4.7,
-    image: "https://via.placeholder.com/200",
+    image: "/red.jpg",
     description: "Bright red wine balances earthy mushrooms.",
   },
   {
@@ -65,7 +65,7 @@ export const pairings: Pairing[] = [
     food: "Grilled Fish",
     foodType: FoodType.Seafood,
     rating: 4.5,
-    image: "https://via.placeholder.com/200",
+    image: "/white.jpg",
     description: "Light white wine from Piedmont pairs with fish.",
   },
   {
@@ -76,7 +76,7 @@ export const pairings: Pairing[] = [
     food: "Tiramisu",
     foodType: FoodType.Dessert,
     rating: 4.7,
-    image: "https://via.placeholder.com/200",
+    image: "/sparkling.jpg",
     description: "Bubbly Prosecco complements creamy tiramisu.",
   },
   {
@@ -87,7 +87,7 @@ export const pairings: Pairing[] = [
     food: "Seafood Risotto",
     foodType: FoodType.Seafood,
     rating: 4.6,
-    image: "https://via.placeholder.com/200",
+    image: "/white.jpg",
     description: "Crisp white for delicate seafood dishes.",
   },
   {
@@ -98,7 +98,7 @@ export const pairings: Pairing[] = [
     food: "Braised Beef",
     foodType: FoodType.Meat,
     rating: 4.9,
-    image: "https://via.placeholder.com/200",
+    image: "/red.jpg",
     description: "Powerful red for rich meat dishes.",
   },
   {
@@ -109,7 +109,7 @@ export const pairings: Pairing[] = [
     food: "Eggplant Parmigiana",
     foodType: FoodType.Meat,
     rating: 4.7,
-    image: "https://via.placeholder.com/200",
+    image: "/red.jpg",
     description: "Full-bodied Sicilian red with hearty eggplant dish.",
   },
   {
@@ -120,7 +120,7 @@ export const pairings: Pairing[] = [
     food: "Grilled Sausages",
     foodType: FoodType.Meat,
     rating: 4.6,
-    image: "https://via.placeholder.com/200",
+    image: "/red.jpg",
     description: "Sicilian red for grilled meats.",
   },
   {
@@ -131,7 +131,7 @@ export const pairings: Pairing[] = [
     food: "Seafood Pasta",
     foodType: FoodType.Seafood,
     rating: 4.5,
-    image: "https://via.placeholder.com/200",
+    image: "/white.jpg",
     description: "Fresh Sicilian white with seafood pasta.",
   },
   {
@@ -142,7 +142,7 @@ export const pairings: Pairing[] = [
     food: "Panettone",
     foodType: FoodType.Dessert,
     rating: 4.8,
-    image: "https://via.placeholder.com/200",
+    image: "/sweet.jpg",
     description: "Sweet wine pairs beautifully with dessert.",
   },
   {
@@ -153,7 +153,7 @@ export const pairings: Pairing[] = [
     food: "Prosciutto",
     foodType: FoodType.Meat,
     rating: 4.4,
-    image: "https://via.placeholder.com/200",
+    image: "/red.jpg",
     description: "Sparkling red for cured meats.",
   },
   {
@@ -164,7 +164,7 @@ export const pairings: Pairing[] = [
     food: "Frittura di Pesce",
     foodType: FoodType.Seafood,
     rating: 4.5,
-    image: "https://via.placeholder.com/200",
+    image: "/sparkling.jpg",
     description: "Light sparkling wine with fried seafood.",
   },
   {
@@ -175,7 +175,7 @@ export const pairings: Pairing[] = [
     food: "Seafood Risotto",
     foodType: FoodType.Seafood,
     rating: 4.6,
-    image: "https://via.placeholder.com/200",
+    image: "/white.jpg",
     description: "Crisp Campania white with creamy seafood risotto.",
   },
   {
@@ -186,7 +186,7 @@ export const pairings: Pairing[] = [
     food: "Braised Lamb",
     foodType: FoodType.Meat,
     rating: 4.7,
-    image: "https://via.placeholder.com/200",
+    image: "/red.jpg",
     description: "Bold red for slow-cooked lamb.",
   },
   {
@@ -197,7 +197,7 @@ export const pairings: Pairing[] = [
     food: "Grilled Anchovies",
     foodType: FoodType.Seafood,
     rating: 4.5,
-    image: "https://via.placeholder.com/200",
+    image: "/white.jpg",
     description: "Fresh Ligurian white with grilled anchovies.",
   },
   {
@@ -208,7 +208,7 @@ export const pairings: Pairing[] = [
     food: "Roast Chicken",
     foodType: FoodType.Meat,
     rating: 4.4,
-    image: "https://via.placeholder.com/200",
+    image: "/red.jpg",
     description: "Light Ligurian red for roast chicken.",
   },
   {
@@ -219,7 +219,7 @@ export const pairings: Pairing[] = [
     food: "Grilled Fish",
     foodType: FoodType.Seafood,
     rating: 4.5,
-    image: "https://via.placeholder.com/200",
+    image: "/white.jpg",
     description: "Light white wine with delicate grilled fish.",
   },
   {
@@ -230,7 +230,7 @@ export const pairings: Pairing[] = [
     food: "Seafood Pasta",
     foodType: FoodType.Seafood,
     rating: 4.6,
-    image: "https://via.placeholder.com/200",
+    image: "/white.jpg",
     description: "Crisp white wine perfect with seafood.",
   },
   {
@@ -241,7 +241,7 @@ export const pairings: Pairing[] = [
     food: "Grilled Sausage",
     foodType: FoodType.Meat,
     rating: 4.5,
-    image: "https://via.placeholder.com/200",
+    image: "/red.jpg",
     description: "Italian red wine with hearty sausage.",
   },
   {
@@ -252,7 +252,7 @@ export const pairings: Pairing[] = [
     food: "Clam Pasta",
     foodType: FoodType.Seafood,
     rating: 4.4,
-    image: "https://via.placeholder.com/200",
+    image: "/white.jpg",
     description: "Light white for shellfish pasta.",
   },
   {
@@ -263,7 +263,7 @@ export const pairings: Pairing[] = [
     food: "Panettone",
     foodType: FoodType.Dessert,
     rating: 4.8,
-    image: "https://via.placeholder.com/200",
+    image: "/sweet.jpg",
     description: "Sweet Moscato pairs beautifully with panettone.",
   },
   {
@@ -274,7 +274,7 @@ export const pairings: Pairing[] = [
     food: "Lasagna",
     foodType: FoodType.Meat,
     rating: 4.7,
-    image: "https://via.placeholder.com/200",
+    image: "/red.jpg",
     description: "Sparkling red pairs with rich lasagna.",
   },
   {
@@ -285,7 +285,7 @@ export const pairings: Pairing[] = [
     food: "Grilled Squid",
     foodType: FoodType.Seafood,
     rating: 4.6,
-    image: "https://via.placeholder.com/200",
+    image: "/white.jpg",
     description: "Crisp white with charred squid.",
   },
   {
@@ -296,7 +296,7 @@ export const pairings: Pairing[] = [
     food: "Risotto Milanese",
     foodType: FoodType.Meat,
     rating: 4.7,
-    image: "https://via.placeholder.com/200",
+    image: "/sparkling.jpg",
     description: "Sparkling white pairs beautifully with saffron risotto.",
   },
   {
@@ -307,7 +307,7 @@ export const pairings: Pairing[] = [
     food: "Osso Buco",
     foodType: FoodType.Meat,
     rating: 4.9,
-    image: "https://via.placeholder.com/200",
+    image: "/red.jpg",
     description: "Elegant red for braised veal shanks.",
   },
   {
@@ -318,7 +318,7 @@ export const pairings: Pairing[] = [
     food: "Cantucci",
     foodType: FoodType.Dessert,
     rating: 4.7,
-    image: "https://via.placeholder.com/200",
+    image: "/sweet.jpg",
     description: "Dessert wine perfect with cantucci biscuits.",
   },
   {
@@ -329,7 +329,7 @@ export const pairings: Pairing[] = [
     food: "Fried Calamari",
     foodType: FoodType.Seafood,
     rating: 4.5,
-    image: "https://via.placeholder.com/200",
+    image: "/white.jpg",
     description: "Crisp white pairs well with fried calamari.",
   },
   {
@@ -340,7 +340,7 @@ export const pairings: Pairing[] = [
     food: "Strudel",
     foodType: FoodType.Dessert,
     rating: 4.6,
-    image: "https://via.placeholder.com/200",
+    image: "/sparkling.jpg",
     description: "Sweet sparkling wine complements desserts.",
   },
   {
@@ -351,7 +351,7 @@ export const pairings: Pairing[] = [
     food: "Spaghetti alle Vongole",
     foodType: FoodType.Seafood,
     rating: 4.7,
-    image: "https://via.placeholder.com/200",
+    image: "/white.jpg",
     description: "Fresh white wine for clam pasta.",
   },
   {
@@ -362,7 +362,7 @@ export const pairings: Pairing[] = [
     food: "Pappardelle al Cinghiale",
     foodType: FoodType.Meat,
     rating: 4.8,
-    image: "https://via.placeholder.com/200",
+    image: "/red.jpg",
     description: "Tuscan red with wild boar pasta.",
   },
   {
@@ -373,7 +373,7 @@ export const pairings: Pairing[] = [
     food: "Parmigiano Reggiano",
     foodType: FoodType.Meat,
     rating: 4.6,
-    image: "https://via.placeholder.com/200",
+    image: "/red.jpg",
     description: "Sparkling red pairs with hard cheeses.",
   },
   {
@@ -384,7 +384,7 @@ export const pairings: Pairing[] = [
     food: "Seafood Salad",
     foodType: FoodType.Seafood,
     rating: 4.5,
-    image: "https://via.placeholder.com/200",
+    image: "/white.jpg",
     description: "Aromatic white with fresh seafood salad.",
   },
 ];
