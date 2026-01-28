@@ -26,12 +26,13 @@
 
 .navLink {
   font-size: 14px;
-  color: #374151;
+  color: var(--color-med-gray);
   text-decoration: none;
 }
 
 .navLink.active {
   padding-left: 16px;
+  color: black;
 }
 
 .navLink.active::before {
@@ -48,6 +49,10 @@
 
 .navLink:hover {
   color: var(--color-primary);
+}
+
+.navLink.active:hover::before {
+  background: var(--color-primary);
 }
 
 .button {
