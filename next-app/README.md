@@ -1,36 +1,185 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Nesso Digitale Landing Page
+
+**Next.js Implementation**
+
+## Overview
+
+A pixel-perfect, responsive marketing landing page built with Next.js 14, featuring interactive components and smooth animations.
+
+## Tech Stack
+
+- Next.js 16 (App Router)
+- React 19
+- TypeScript
+- Framer Motion (animations)
+- CSS Modules
+- Lucide React (icons)
 
 ## Getting Started
 
-First, run the development server:
+### Installation
+
+```bash
+npm install
+```
+
+### Development
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open http://localhost:3000
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Production Build
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+npm start
+```
 
-## Learn More
+## Project Structure
 
-To learn more about Next.js, take a look at the following resources:
+```
+next-app/
+├── public/             # Static assets
+├── src/
+│   ├── app/
+│   │   ├── layout.tsx      # Root layout with fonts
+│   │   ├── page.tsx        # Main page
+│   │   └── globals.css     # Global styles
+│   └── components/
+│       ├── sections/       # Page sections
+│       │   ├── about/
+│       │   ├── cta/
+│       │   ├── features/
+│       │   ├── hero/
+│       │   ├── project-showcase/
+│       │   ├── service/
+│       │   └── transformation/
+│       └── ui/             # Reusable components
+│           ├── button/
+│           ├── footer/
+│           ├── header/
+│           ├── section-header/
+│           └── section-title/
+├── package.json
+├── tsconfig.json
+├── next.config.ts
+└── README.md
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Key Features
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Interactive Components
 
-## Deploy on Vercel
+**1. Mobile Navigation**
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Hamburger menu with overlay
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+**2. Project Carousel**
+
+- Animated slide transitions (Framer Motion)
+- Direction-aware animations
+- Previous/Next navigation
+- Responsive image handling
+
+### Responsive Design
+
+**Desktop (1440px+)**
+
+- Multi-column layouts
+- Large typography (85px hero)
+- Full navigation bar
+
+**Tablet (768px - 1024px)**
+
+- Adjusted layouts
+- Medium typography (64px hero)
+- Maintained hierarchy
+
+**Mobile (< 768px)**
+
+- Single column stack
+- Hamburger menu
+- Small typography (36-48px)
+- Hidden decorative elements for performance
+
+### Design Tokens
+
+```css
+--color-primary: #4a90e2 --color-gray: #f9fafb --font-jakarta: Plus Jakarta Sans
+  --font-poppins: Poppins;
+```
+
+## Component Architecture
+
+### Reusable Components
+
+**Button**
+
+- Variant for showing common icon
+
+**SectionHeader**
+
+- Two-column layout (title + description)
+- Responsive text sizing
+
+**AboutCard**
+
+- Content card with subtitle and description
+- Flexible layout
+
+### Component Patterns Used
+
+- CSS Modules for scoped styling
+- TypeScript interfaces for props
+- Composition with children props
+- Responsive design with media queries
+
+## Technical Decisions
+
+### Why Framer Motion?
+
+Provides professional, smooth animations with spring physics. Better than CSS-only for complex interactive components.
+
+### Why CSS Modules?
+
+- Component-scoped styling prevents conflicts
+- Better performance than CSS-in-JS
+- Works seamlessly with Next.js
+
+### Why TypeScript?
+
+- Catch errors at compile time
+- Better IDE autocomplete
+- Self-documenting component APIs
+
+## Responsive Breakpoints
+
+- Mobile: < 768px
+- Tablet: 768px - 1024px
+- Desktop: 1024px+
+
+## Accessibility
+
+- Semantic HTML elements
+- Keyboard navigation support
+- ARIA labels on interactive elements
+- Focus states on all clickable items
+- WCAG AA color contrast
+
+## Performance
+
+- Next.js optimized builds
+- CSS Modules for smaller bundles
+- GPU-accelerated animations
+- Optimized images
+- Minimal JavaScript
+
+## SEO
+
+- Proper page metadata
+- Open Graph tags
+- Semantic heading hierarchy
+- Descriptive alt text
