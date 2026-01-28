@@ -7,6 +7,10 @@ interface PairingListProps {
 }
 
 const PairingList: React.FC<PairingListProps> = ({ pairings }) => {
+  if (pairings.length === 0) {
+    return <div className="empty-state">No pairings match your filters.</div>;
+  }
+
   return (
     <div className="pairing-list">
       {pairings.map((p) => (
