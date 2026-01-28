@@ -5,6 +5,7 @@ import { pairings as initialPairings } from "./data/pairings";
 import { WineType, FoodType, Region, type Pairing } from "./types";
 import "./App.css";
 import { useFavorites } from "./hooks/useFavorites";
+import { filterPairings } from "./utils/filterPairings";
 
 const App: React.FC = () => {
   const [pairings] = useState<Pairing[]>(initialPairings);
@@ -15,19 +16,10 @@ const App: React.FC = () => {
   const [selectedFoodTypes, setSelectedFoodTypes] = useState<FoodType[]>([]);
 
   const filteredPairings = useMemo(() => {
-    return pairings.filter((p) => {
-      const wineMatch =
-        selectedWineTypes.length === 0 ||
-        selectedWineTypes.includes(p.wineType);
-
-      const regionMatch =
-        selectedRegions.length === 0 || selectedRegions.includes(p.region);
-
-      const foodMatch =
-        selectedFoodTypes.length === 0 ||
-        selectedFoodTypes.includes(p.foodType);
-
-      return wineMatch && regionMatch && foodMatch;
+    return filterPairings(pairings, {
+      wineTypes: selectedWineTypes,
+      regions: selectedRegions,
+      foodTypes: selectedFoodTypes,
     });
   }, [pairings, selectedWineTypes, selectedRegions, selectedFoodTypes]);
 
