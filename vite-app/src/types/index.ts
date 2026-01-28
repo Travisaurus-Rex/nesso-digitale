@@ -11,11 +11,23 @@ export enum FoodType {
   Dessert = "Dessert",
 }
 
+export enum Region {
+  Tuscany = "Tuscany",
+  Piemonte = "Piemonte",
+  Veneto = "Veneto",
+  Sicilia = "Sicilia",
+  Lombardia = "Lombardia",
+  EmiliaRomagna = "Emilia-Romagna",
+  Marche = "Marche",
+  Campania = "Campania",
+  Liguria = "Liguria",
+}
+
 export interface Pairing {
   id: number;
   wine: string;
   wineType: WineType;
-  region: string;
+  region: Region;
   food: string;
   foodType: FoodType;
   rating: number;
