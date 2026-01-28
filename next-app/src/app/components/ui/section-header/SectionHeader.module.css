@@ -9,3 +9,12 @@
   font-weight: 400;
   font-size: 20px;
 }
+
+.active:after {
+  content: "";
+  display: inline-block;
+  width: 3px;
+  height: 3px;
+  border-radius: 3px;
+  background-color: black;
+}

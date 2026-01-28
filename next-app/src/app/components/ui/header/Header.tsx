@@ -13,7 +13,7 @@ export default function Header() {
         <img src="/logo.svg" alt="Nesso Digitale" className={styles.logo} />
 
         <nav className={styles.nav}>
-          <a href="#" className={styles.navLink}>
+          <a href="#" className={`${styles.navLink} ${styles.active}`}>
             Home
           </a>
           <a href="#" className={styles.navLink}>

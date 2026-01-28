@@ -21,12 +21,29 @@
   background-color: var(--color-lightgray);
   padding: 12px 31px;
   border-radius: 25px;
+  position: relative;
 }
 
 .navLink {
   font-size: 14px;
   color: #374151;
   text-decoration: none;
+}
+
+.navLink.active {
+  padding-left: 16px;
+}
+
+.navLink.active::before {
+  content: "";
+  position: absolute;
+  left: 26px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 6px;
+  height: 6px;
+  background: black;
+  border-radius: 50%;
 }
 
 .navLink:hover {
