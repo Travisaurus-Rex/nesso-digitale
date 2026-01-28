@@ -20,6 +20,7 @@ export default function CTA() {
             </p>
 
             <Button showIcon>Prenota una Consulenza</Button>
+            <img src="/connectGrid.svg" alt="" className={styles.grid} />
           </div>
         </div>
       </div>
