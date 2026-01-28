@@ -1,12 +1,19 @@
 import React from "react";
 import type { Pairing } from "../../types";
 import "./PairingList.css";
+import PairingCard from "../pairing-card/PairingCard";
 
 interface PairingListProps {
   pairings: Pairing[];
+  favorites: number[];
+  onToggleFavorite: (id: number) => void;
 }
 
-const PairingList: React.FC<PairingListProps> = ({ pairings }) => {
+const PairingList: React.FC<PairingListProps> = ({
+  pairings,
+  favorites,
+  onToggleFavorite,
+}) => {
   if (pairings.length === 0) {
     return <div className="empty-state">No pairings match your filters.</div>;
   }
@@ -14,16 +21,12 @@ const PairingList: React.FC<PairingListProps> = ({ pairings }) => {
   return (
     <div className="pairing-list">
       {pairings.map((p) => (
-        <div key={p.id} className="pairing-card">
-          <div className="image-container">
-            <img src={p.image} alt={p.wine} className="pairing-image" />
-          </div>
-          <div className="card-content">
-            <h3>{p.wine}</h3>
-            <p>{p.food}</p>
-            <p>{p.region}</p>
-          </div>
-        </div>
+        <PairingCard
+          key={p.id}
+          pairing={p}
+          isFavorite={favorites.includes(p.id)}
+          onToggleFavorite={onToggleFavorite}
+        />
       ))}
     </div>
   );

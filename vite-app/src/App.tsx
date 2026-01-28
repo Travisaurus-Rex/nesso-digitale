@@ -4,9 +4,11 @@ import FilterPanel from "./components/filter-panel/FilterPanel";
 import { pairings as initialPairings } from "./data/pairings";
 import { WineType, FoodType, Region, type Pairing } from "./types";
 import "./App.css";
+import { useFavorites } from "./hooks/useFavorites";
 
 const App: React.FC = () => {
   const [pairings] = useState<Pairing[]>(initialPairings);
+  const { favorites, toggleFavorite } = useFavorites();
 
   const [selectedWineTypes, setSelectedWineTypes] = useState<WineType[]>([]);
   const [selectedRegions, setSelectedRegions] = useState<Region[]>([]);
@@ -42,7 +44,11 @@ const App: React.FC = () => {
         onFoodTypeChange={setSelectedFoodTypes}
       />
 
-      <PairingList pairings={filteredPairings} />
+      <PairingList
+        pairings={filteredPairings}
+        favorites={favorites}
+        onToggleFavorite={toggleFavorite}
+      />
     </div>
   );
 };
