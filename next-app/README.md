@@ -4,7 +4,7 @@
 
 ## Overview
 
-A pixel-perfect, responsive marketing landing page built with Next.js 14, featuring interactive components and smooth animations.
+A pixel-perfect, responsive marketing landing page built with Next.js 16, featuring interactive components and smooth animations.
 
 ## Tech Stack
 
