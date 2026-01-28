@@ -1,3 +1,4 @@
+import Image from "next/image";
 import SectionTitle from "../../ui/section-title/SectionTitle";
 import styles from "./About.module.css";
 import AboutCard from "./AboutCard";
@@ -10,7 +11,13 @@ export default function About() {
 
         <div className={styles.content}>
           <div className={styles.imageColumn}>
-            <img src="/team.jpg" alt="Team" className={styles.image} />
+            <Image
+              src="/team.jpg"
+              alt="Team"
+              className={styles.image}
+              width="619"
+              height="316"
+            />
           </div>
 
           <div className={styles.textColumn}>
